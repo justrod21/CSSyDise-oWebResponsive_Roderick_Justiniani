@@ -1,0 +1,223 @@
+body {
+ font-family: 'Dancing Script', cursive;
+ background-color: black;
+}
+#contenido {
+ width: 900px;
+ margin: auto;
+}
+header {
+  color: white;
+  background-color: #5b7989;
+  text-shadow: 2px 2px #02010a;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  height: 90px;
+  animation: animacion1 2s;
+}
+header h1 {
+  float: left;
+  padding-left: 2%;
+}
+nav {
+float: right;
+margin-top: 16px;
+}
+header li {
+ list-style-type: none;
+ padding: 35px;
+ display: inline
+}
+li a {
+ color: white;
+ text-shadow: none;
+}
+#playa {
+ width: 60%;
+ margin: 20px 20%;
+}
+#imagen_central, #fila1, #fila2 {
+ background-color: #82c3a6;
+}
+#contenedor {
+ background-color: #d5c75f;
+ display: flex;
+ display: -webkit-flex;
+ flex-direction: row;
+ padding-left: 10%;
+}
+#paisaje {
+ width: 75%;
+}
+#paisaje:hover {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  box-shadow: 10px 10px #82c3a6;
+  border: 2px solid black;
+}
+#retrato {
+ width: 75%;
+}
+#retrato:hover {
+  transform: translate(20px,-5px);
+  -webkit-transform: translate(20px,-5px);
+  box-shadow: 10px 10px #82c3a6;
+  border: 2px solid black;
+}
+img {
+ border: 1px solid black;
+ box-shadow: 2px 2px #02010a;
+}
+figcaption {
+  position: relative;
+  left: 33%;
+}
+figcaption a {
+   color: black;
+   font-weight: bold;
+}
+#fila1 {
+ display: flex;
+ display: -webkit-flex;
+}
+#fila1 img {
+ width: 25%;
+ height: 15%;
+ margin-top: 50px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 50px;
+}
+#avion {
+ filter: blur(10px);
+ -webkit-filter: blur(10px);
+ -ms-filter: blur(10px);
+}
+#cascada, #piedras, #mundo {
+ filter: grayscale(100%);
+ -webkit-filter: grayscale(100%);
+ -ms-filter: grayscale(100%);
+}
+#lineas {
+ filter: sepia(90%);
+ -webkit-filter: sepia(90%);
+ -ms-filter: sepia(90%);
+}
+#fila2 {
+ display: flex;
+ display: -webkit-flex;
+}
+#fila2 img {
+ width: 25%;
+ height: 15%;
+ margin-top: 50px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 50px;
+}
+footer {
+ background-color: #C6d5c5;
+ border-radius: 0 0 10px 10px;
+ -webkit-border-radius: 0 0 10px 10px;
+ display: flex;
+}
+footer li {
+ list-style-type: none;
+} 
+#contactos {
+ margin-left: 3%;
+}
+#terminos {
+ margin-left: 8%;
+}
+#redes {
+ margin-left: 8%;
+}
+#derechos {
+ margin-left: 8%;
+}
+.big {
+ font-weight: bold;
+}
+.social {
+ width: 5%;
+ border: none;
+ box-shadow: none;
+}
+.social_links {
+ text-decoration: none;
+ color: black;
+}
+
+@-webkit-keyframes animacion1 {
+ 0%{
+  margin-top: 150%;
+}
+ 60%{
+  margin-top: -5%;
+}
+ 100%{
+  margin-top: 0%;
+}
+}
+@keyframes animacion1 {
+ 0%{
+  margin-top: 150%;
+}
+ 60%{
+  margin-top: -5%;
+}
+ 100%{
+  margin-top: 0%;
+}
+}
+ 
+@media screen and (max-width: 900px) {
+body {
+
+}
+#contenido {
+ width: 100%;
+ margin: 0;
+}
+header {
+height: 10%;
+}
+header h1 {
+  text-align: center;
+  float: none;
+}
+nav {
+ float: none;
+}
+nav ul{
+  text-align: center;
+}
+header li {
+  display: inline-block;
+  padding: 3%;
+}
+footer {
+ display: flex;
+ flex-direction: column;
+}
+#contenedor {
+ background-color: #d5c75f;
+ display: flex;
+ flex-direction: column;
+}
+#contenedor img {
+ margin: auto;
+ width: 85%;
+}
+#fila1, #fila2 {
+ display: flex;
+ flex-direction: column;
+}
+#fila1 img {
+ width: 85%;
+}
+#fila2 img {
+ width: 85%;
+}
+}
